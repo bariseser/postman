@@ -16,7 +16,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "127.0.0.1:8080/videos?test=test",
+					"raw": "127.0.0.1:8080/videos?test=test&value=value&name=dededee&asd=asd",
 					"host": [
 						"127",
 						"0",
@@ -30,12 +30,19 @@
 					"query": [
 						{
 							"key": "test",
-							"value": "test",
-							"type": "text"
+							"value": "test"
 						},
 						{
 							"key": "value",
-							"value": "value",
+							"value": "value"
+						},
+						{
+							"key": "name",
+							"value": "dededee"
+						},
+						{
+							"key": "asd",
+							"value": "asd",
 							"type": "text"
 						}
 					]
