@@ -32,6 +32,11 @@
 							"key": "test",
 							"value": "test",
 							"type": "text"
+						},
+						{
+							"key": "value",
+							"value": "value",
+							"type": "text"
 						}
 					]
 				}
