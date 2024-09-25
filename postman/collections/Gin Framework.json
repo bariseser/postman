@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "fb27810f-f5f1-4498-9864-c6c15b70607e",
+		"name": "Gin Framework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "3253369-fb27810f-f5f1-4498-9864-c6c15b70607e"
+	},
+	"item": [
+		{
+			"name": "All Entities",
+			"id": "45aeacb4-501d-4540-be69-1aa3aa1bee7b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/videos?test=test",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"videos"
+					],
+					"query": [
+						{
+							"key": "test",
+							"value": "test",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Entity",
+			"id": "9729f417-86ac-4670-b745-fb8cd0f764db",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\" : \"Denemedenemedememe\",\n    \"description\": \"Deneme\",\n    \"url\" : \"http://127.0.0.1:8080/videos\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/video",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"video"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "entity",
+			"id": "b613544e-4713-49c6-93b5-dd10d10755a5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/video/1",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"video",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "Dde5fX",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "bariseser",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d140dec1-93a9-4b54-a826-231a4023d45d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "260c64d0-4d1e-45d6-8e0b-e301f3586618",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
